@@ -37,17 +37,22 @@ h3 {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
+     align-items: stretch;
 }
 
 #IconosMenu {
      display: flex;
+     flex-direction: row;
      justify-content: flex-start;
-     list-style: none
+     list-style: none;
+     
 }
 
-#IconosM {
+#IconosM {display: flex;
      padding: 5px 5px 5px 5px;
-     margin: 10px 10px 10px 10px
+     margin: 10px 10px 10px 10px;
+     gap: 2px;
+     justify-content: space-between;
 }
 
 
@@ -93,7 +98,7 @@ h3 {
      padding: 0px 0px 0px 0px;
      color: beige;
      display: contents;
-     
+
 
 }
 
@@ -125,8 +130,8 @@ fieldset {
      grid-area: Fotos;
      justify-content: center;
      align-items: center;
-gap: 4px;
-flex-direction: column;
+     gap: 4px;
+     flex-direction: column;
 
 }
 
@@ -186,7 +191,7 @@ iframe {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
      grid-template-rows: repeat(2, 1fr);
-    
+
 }
 
 #Seccion3 .PF {
@@ -243,8 +248,8 @@ iframe {
      color: rgb(227, 134, 219);
      font-size: 15px;
      font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     
-     
+
+
      text-decoration: none;
 }
 
@@ -377,7 +382,8 @@ iframe {
           align-items: center;
      }
 
-     #IconosMenu { font-size: 13px;
+     #IconosMenu {
+          font-size: 13px;
           display: flex;
           justify-content: flex-start;
           list-style: none;
@@ -389,9 +395,10 @@ iframe {
           margin: 2px 2px 2px 2px
      }
 
-     .FotosBronceado{display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-}
+     .FotosBronceado {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
 }
