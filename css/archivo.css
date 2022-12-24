@@ -38,6 +38,7 @@ h3 {
      flex-direction: row;
      justify-content: space-between;
      align-items: stretch;
+     
 }
 
 #IconosMenu {
@@ -45,15 +46,28 @@ h3 {
      flex-direction: row;
      justify-content: flex-start;
      list-style: none;
+    
+     
      
 }
+#IconosMenu a {text-decoration: none;
+color: rgb(213, 184, 240);}
+
+#IconosMenu a:hover {
+     color: rgb(251, 250, 250);
+     background-color: transparent;
+     text-decoration: none;
+   }
 
 #IconosM {display: flex;
      padding: 5px 5px 5px 5px;
      margin: 10px 10px 10px 10px;
      gap: 2px;
      justify-content: space-between;
+    text-decoration: none;
 }
+
+nav{text-decoration: none;}
 
 
 .ServiciosTitulo {

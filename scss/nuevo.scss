@@ -1,0 +1,442 @@
+$colorPrincipal: rgb(134, 212, 218);
+$color2: gray;
+$color3: rgb(213, 184, 240);
+$color4: bisque;
+$color5: rgb(251, 250, 250);
+
+* {
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    box-sizing: border-box;
+
+}
+
+.Contenedor {
+    margin: auto;
+    max-width: 1500px;
+    background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.8)), url(../imagenes/fotolugrande.jpg);
+    background-size: 100%;
+
+    .MenuInicio {
+        color: rgb(213, 184, 240);
+        font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+
+        #Logo {
+            border-radius: 1100px;
+            text-align: center;
+            padding: 5px 10px 10px 10px;
+        }
+
+        .tilt-in-tl {
+            -webkit-animation: tilt-in-tl 1.9s;
+            animation: tilt-in-tl 1.9s;
+        }
+    }
+
+
+
+
+
+    nav {
+        text-decoration: none;
+
+        #IconosMenu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: rgb(213, 184, 240);
+
+                #IconosM {
+                    display: flex;
+                    padding: 5px 5px 5px 5px;
+                    margin: 10px 10px 10px 10px;
+                    gap: 2px;
+                    justify-content: space-between;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+}
+
+#LuTitulo {
+    color: rgb(134, 212, 218);
+    font-size: 120px;
+    padding: 5px 20px 5px 15px;
+    display: inline;
+    font-family: 'Kolker Brush', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .fade-in-left {
+        -webkit-animation: fade-in-left 1.9s;
+        animation: fade-in-left 1.9s;
+    }
+}
+
+#SubTitulo {
+    display: inline;
+    padding: 5px 20px 5px 15px;
+    font-size: 35px;
+    color: gray;
+    font-family: 'Josefin Sans', sans-serif
+}
+
+.Introduccion {
+    font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    color: azure;
+    padding: 80px 40px 60px 40px;
+    text-align: center;
+}
+
+.Seccion2 {
+    display: grid;
+    padding: 80px 10px 10px 10px;
+    margin: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "ServiciosTitulo ServiciosTitulo Fotos"
+        "ServiciosTitulo ServiciosTitulo Fotos"
+        "ServiciosTitulo ServiciosTitulo Fotos"
+        "ServiciosTitulo ServiciosTitulo Fotos";
+
+    .ServiciosTitulo {
+        padding: 5px 80px 5px 35px;
+        font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        grid-area: ServiciosTitulo;
+
+        h3 {
+            color: $color4 ;
+        }
+
+        .ServiciosLista {
+            color: rgb(209, 241, 231);
+            margin: 20px 0px 0px 100px;
+
+            #LinkNone {
+                text-decoration: none;
+                color: rgb(167, 240, 196)
+            }
+
+            #Descripcion {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .Fotos {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: Fotos;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        flex-direction: column;
+
+    }
+}
+
+#Seccion3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .PF {
+        grid-column: 1/3;
+        grid-row: 1/2;
+
+        .PreguntasFrecuentes {
+            font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: bisque;
+            padding: 20px 20px 20px 10px;
+
+        }
+
+        .Preguntas {
+            padding: 5px 5px 5px 15px;
+            font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            color: bisque;
+        }
+    }
+
+    .Formulario {
+        margin: 5px;
+        padding: 5px;
+        font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0px 0px 0px 0px;
+        color: beige;
+        display: contents;
+
+        #CajaFormulario {
+            margin: 0px 90px 0px 90px;
+            padding: 0px 90px 0px 90px;
+        gap: 10px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            justify-content: space-between;
+            height: px;
+       }
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+
+            #Mapa {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+
+        }
+
+
+    }
+
+}
+
+footer {
+    font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(168, 169, 163);
+    text-align: center;
+    padding: 10px;
+    margin: 10px
+}
+
+.Bronceado {
+    text-align: center;
+    font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: antiquewhite;
+    padding: 5px 5px 25px 5px;
+
+}
+.DescripcionBronceado {
+    color: rgb(209, 241, 231);
+
+    font-size: 10px;
+    font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 5px 5px 45px 5px;
+}
+
+.FotosBronceado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2px;
+
+
+
+}
+
+.PieFotos {
+    color: rgb(237, 221, 187);
+
+    font-size: 10px;
+    font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 40px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.VolverInicio {
+    color: rgb(227, 134, 219);
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+    text-decoration: none;
+}
+
+.VolverI {
+    text-align: center;
+    padding: 40px 5px 20px 5px;
+}
+
+@-webkit-keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tilt-in-tl {
+    0% {
+        -webkit-transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
+        transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes tilt-in-tl {
+    0% {
+        -webkit-transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
+        transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    /* Celular */
+
+    .Contenedor nav #IconosMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none;
+    }
+
+    .Seccion2 {
+        display: flex;
+        padding: 5px 5px 5px 5px;
+        margin: 5px;
+        flex-direction: column;
+        justify-content: space-around;
+
+
+        .ServiciosTitulo {
+            font-size: 15px;
+
+            .ServiciosLista {
+                margin: 10px 0px 0px 50px;
+            }
+
+            #Descripcion {
+                font-size: 10px;
+            }
+        }
+
+        .Fotos {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+
+
+
+
+    .Introduccion {
+        font-size: 18px;
+    }
+
+
+
+
+    #Seccion3 .Formulario #CajaFormulario fieldset {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        justify-content: space-between;}
+
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+
+
+
+    #Seccion3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .PF {
+            height: 150px;
+
+            .Preguntas {
+                font-size: 10px;
+            }
+
+            .PreguntasFrecuentes {
+                font-size: 8px;
+            }
+        }
+    }
+
+    #IconosMenu {
+        font-size: 13px;
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        flex-direction: column;
+   }
+
+   #IconosM {
+        padding: 5px 5px 5px 5px;
+        margin: 2px 2px 2px 2px
+   }
+
+   
+
+    .FotosBronceado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe {width: 300px;
+    height: 280;}
+}
