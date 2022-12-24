@@ -47,6 +47,10 @@
   color: #d5b8f0;
 }
 
+.Contenedor nav #IconosMenu a:hover {
+  color: white;
+}
+
 .Contenedor nav #IconosMenu a #IconosM {
   display: flex;
   padding: 5px 5px 5px 5px;
@@ -64,7 +68,7 @@
   font-family: 'Kolker Brush', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#LuTitulo .fade-in-left {
+.fade-in-left {
   -webkit-animation: fade-in-left 1.9s;
   animation: fade-in-left 1.9s;
 }
@@ -83,6 +87,11 @@
   color: azure;
   padding: 80px 40px 60px 40px;
   text-align: center;
+}
+
+.Introduccion::selection {
+  color: black;
+  background-color: #86d4da;
 }
 
 .Seccion2 {
@@ -113,6 +122,10 @@
 .Seccion2 .ServiciosTitulo .ServiciosLista #LinkNone {
   text-decoration: none;
   color: #a7f0c4;
+}
+
+.Seccion2 .ServiciosTitulo .ServiciosLista #LinkNone:hover {
+  color: white;
 }
 
 .Seccion2 .ServiciosTitulo .ServiciosLista #Descripcion {
@@ -159,7 +172,7 @@
   padding: 5px;
   font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 0px 0px 0px 0px;
-  color: beige;
+  color: bisque;
   display: contents;
 }
 
@@ -191,7 +204,7 @@
 
 footer {
   font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #a8a9a3;
+  color: gray;
   text-align: center;
   padding: 10px;
   margin: 10px;
