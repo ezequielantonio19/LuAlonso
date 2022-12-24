@@ -74,7 +74,7 @@
     font-size: 120px;
     padding: 5px 20px 5px 15px;
     display: inline;
-    font-family: 'Kolker Brush', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $fuenteTitulo;
 
 
 }
@@ -93,7 +93,7 @@
 }
 
 .Introduccion {
-    font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $fuentePrincipal;
     font-size: 26px;
     color: azure;
     padding: 80px 40px 60px 40px;
@@ -117,7 +117,7 @@
 
     .ServiciosTitulo {
         padding: 5px 80px 5px 35px;
-        font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $fuentePrincipal;
         font-size: 22px;
         grid-area: ServiciosTitulo;
 
@@ -166,7 +166,7 @@
         grid-row: 1/2;
 
         .PreguntasFrecuentes {
-            font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: $fuentePrincipal;
             font-size: 20px;
             color: $color4;
             padding: 20px 20px 20px 10px;
@@ -175,7 +175,7 @@
 
         .Preguntas {
             padding: 5px 5px 5px 15px;
-            font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: $fuentePrincipal;
             font-size: 18px;
             color: $color4;
         }
