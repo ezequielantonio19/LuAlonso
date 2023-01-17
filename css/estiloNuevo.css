@@ -159,11 +159,11 @@
   font-family: "Kanit", sans-serif, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
   color: bisque;
-  padding: 20px 20px 20px 10px;
+  padding: 40px 20px 20px 10px;
 }
 
 #Seccion3 .PF .Preguntas {
-  padding: 5px 5px 5px 15px;
+  padding: 25px 5px 100px 15px;
   font-family: "Kanit", sans-serif, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
   color: bisque;
@@ -179,11 +179,13 @@
 }
 
 #Seccion3 .Formulario #CajaFormulario {
-  margin: 0px 90px 0px 90px;
+  margin: 50px 90px 0px 90px;
   padding: 0px 90px 0px 90px;
   gap: 10px;
   grid-column: 1/2;
   grid-row: 2/3;
+  justify-content: center;
+  align-items: center;
 }
 
 #Seccion3 .Formulario #CajaFormulario fieldset {
@@ -197,6 +199,8 @@
 #Seccion3 .Formulario iframe {
   display: block;
   margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 #Seccion3 .Formulario iframe #Mapa {
@@ -270,12 +274,45 @@ footer .face a:hover {
   color: #e386db;
   font-size: 15px;
   font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
 
-.VolverI {
+.Seccion5 .VolverI {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.Seccion6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.Seccion6 .FotosBronceado {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-content: center;
+  align-items: center;
+}
+
+.Seccion6 .PieFotos {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Seccion6 .VolverI {
+  grid-column: 2/3;
+  grid-row: 2/3;
   text-align: center;
   padding: 40px 5px 20px 5px;
+  justify-content: center;
 }
 
 @-webkit-keyframes fade-in-left {
@@ -428,6 +465,14 @@ footer .face a:hover {
     height: 360px;
     width: 200px;
   }
+  .Seccion6 {
+    display: flex;
+    flex-direction: column;
+  }
+  #IconosMenu {
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 480px) {
@@ -437,6 +482,10 @@ footer .face a:hover {
     flex-direction: column;
     justify-content: flex-start;
     list-style: none;
+  }
+  .Contenedor nav #IconosMenu a #IconosM {
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
   }
   header img {
     height: 180px;
@@ -478,6 +527,7 @@ footer .face a:hover {
   }
   #Seccion3 .PF {
     height: 150px;
+    margin-bottom: 170px;
   }
   #Seccion3 .PF .Preguntas {
     font-size: 10px;
@@ -492,7 +542,7 @@ footer .face a:hover {
     list-style: none;
     flex-direction: column;
   }
-  #IconosM {
+  #IconosMenu a #IconosM {
     padding: 5px 5px 5px 5px;
     margin: 2px 2px 2px 2px;
   }
@@ -509,5 +559,9 @@ footer .face a:hover {
   img .FotoLu {
     height: 320px;
     width: 250px;
+  }
+  .Seccion6 {
+    display: flex;
+    flex-direction: column;
   }
 }

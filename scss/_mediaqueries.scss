@@ -72,16 +72,24 @@
             width: 200px;
         }
     }
+    .Seccion6{display: flex;
+        flex-direction: column;}
+
+        #IconosMenu {
+            font-size: 14px;
+        flex-wrap: wrap;}
 }
 
 @media (max-width: 480px) {
     /* Celular */
 
-    .Contenedor nav #IconosMenu {
+    .Contenedor nav #IconosMenu  {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        list-style: none;
+        list-style: none; 
+        a{#IconosM{padding: 5px 5px 5px 5px;
+            margin: 2px 2px 2px 2px;}}
     }
 
     header img {height: 180px;
@@ -145,16 +153,19 @@
 
         .PF {
             height: 150px;
+            margin-bottom: 170px;
 
             .Preguntas {
                 font-size: 10px;
+                
             }
 
             .PreguntasFrecuentes {
                 font-size: 8px;
-            }
+           }
         }
     }
+    
 
     #IconosMenu {
         font-size: 13px;
@@ -162,12 +173,12 @@
         justify-content: flex-start;
         list-style: none;
         flex-direction: column;
-    }
+       a { #IconosM {
+            padding: 5px 5px 5px 5px;
+            margin: 2px 2px 2px 2px;
+        }}}
 
-    #IconosM {
-        padding: 5px 5px 5px 5px;
-        margin: 2px 2px 2px 2px
-    }
+    
 
 
 
@@ -188,4 +199,7 @@
         height: 320px;
         width: 250px;
     }
+
+    .Seccion6{display: flex;
+    flex-direction: column;}
 }

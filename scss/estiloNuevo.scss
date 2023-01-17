@@ -7,66 +7,66 @@
     max-width: 1500px;
     background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.8)), url(../imagenes/fotolugrande.jpg);
     background-size: 100%;
-    background-attachment:fixed;
+    background-attachment: fixed;
 
-    
-        .MenuInicio {
-            color: $color3;
-            font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: stretch;
 
-            #Logo {
-                border-radius: 1100px;
-                text-align: center;
-                padding: 5px 10px 10px 10px;
-            }
+    .MenuInicio {
+        color: $color3;
+        font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
 
-            .tilt-in-tl {
-                -webkit-animation: tilt-in-tl 1.9s;
-                animation: tilt-in-tl 1.9s;
-            }
+        #Logo {
+            border-radius: 1100px;
+            text-align: center;
+            padding: 5px 10px 10px 10px;
         }
 
+        .tilt-in-tl {
+            -webkit-animation: tilt-in-tl 1.9s;
+            animation: tilt-in-tl 1.9s;
+        }
+    }
 
 
 
 
-        nav {
-            text-decoration: none;
 
-            #IconosMenu {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                list-style: none;
+    nav {
+        text-decoration: none;
 
-                a {
+        #IconosMenu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $color3;
+
+                &:hover {
+                    color: white;
+                }
+
+                #IconosM {
+                    display: flex;
+                    padding: 5px 5px 5px 5px;
+                    margin: 10px 10px 10px 10px;
+                    gap: 2px;
+                    justify-content: space-between;
                     text-decoration: none;
-                    color: $color3;
-
-                    &:hover {
-                        color: white;
-                    }
-
-                    #IconosM {
-                        display: flex;
-                        padding: 5px 5px 5px 5px;
-                        margin: 10px 10px 10px 10px;
-                        gap: 2px;
-                        justify-content: space-between;
-                        text-decoration: none;
-                    }
                 }
             }
         }
+    }
 
 
 
 
-    
+
 
 }
 
@@ -100,8 +100,10 @@
     padding: 80px 40px 60px 40px;
     text-align: center;
 
-    &::selection{color: black;
-    background-color: $colorPrincipal;}
+    &::selection {
+        color: black;
+        background-color: $colorPrincipal;
+    }
 }
 
 .Seccion2 {
@@ -171,12 +173,12 @@
             font-family: $fuentePrincipal;
             font-size: 20px;
             color: $color4;
-            padding: 20px 20px 20px 10px;
+            padding: 40px 20px 20px 10px;
 
         }
 
         .Preguntas {
-            padding: 5px 5px 5px 15px;
+            padding: 25px 5px 100px 15px;
             font-family: $fuentePrincipal;
             font-size: 18px;
             color: $color4;
@@ -192,16 +194,19 @@
         display: contents;
 
         #CajaFormulario {
-            margin: 0px 90px 0px 90px;
+            margin: 50px 90px 0px 90px;
             padding: 0px 90px 0px 90px;
             gap: 10px;
             grid-column: 1/2;
             grid-row: 2/3;
+            justify-content: center;
+            align-items: center;
 
             fieldset {
                 display: flex;
                 flex-direction: column;
                 font-size: 20px;
+
                 justify-content: space-between;
                 height: px;
             }
@@ -210,6 +215,8 @@
         iframe {
             display: block;
             margin: auto;
+            justify-content: center;
+            align-items: center;
 
             #Mapa {
                 grid-column: 2/3;
@@ -224,30 +231,33 @@
 }
 
 footer {
-    display:flex;
+    display: flex;
     flex-direction: column;
     font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: $color2;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    
 
-     .face  {margin: 25px 15px 15px 15px;
+
+    .face {
+        margin: 25px 15px 15px 15px;
         padding: 5px;
         font-size: 30px;
-        
-        
-        a{  
+
+
+        a {
             text-decoration: none;
             color: $color2;
 
-        &:hover {
-            color: white;
-        }}}
+            &:hover {
+                color: white;
+            }
+        }
+    }
 
-    
-    
+
+
 }
 
 .Bronceado {
@@ -277,7 +287,7 @@ footer {
 
     .puff-in-bottom {
         -webkit-animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-                animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
     }
 }
 
@@ -296,16 +306,50 @@ footer {
     color: rgb(227, 134, 219);
     font-size: 15px;
     font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
 
 
     text-decoration: none;
 }
 
-.VolverI {
-    text-align: center;
-    padding: 40px 5px 20px 5px;
+.Seccion5 {
+    .VolverI {padding: 20px;
+        margin: 20px;
+        text-align: center;
+        justify-content: center;
+    }
 }
 
+.Seccion6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    .FotosBronceado {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PieFotos {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        font-size: 11px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .VolverI {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: center;
+        padding: 40px 5px 20px 5px;
+        justify-content: center;
+    }
+}
 
 
 @import "./animaciones.scss";
