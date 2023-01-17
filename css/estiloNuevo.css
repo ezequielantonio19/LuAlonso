@@ -261,6 +261,23 @@ footer .face a:hover {
   animation: puff-in-bottom 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
+.Seccion4 .DescripcionBronceado2 {
+  color: #d1f1e7;
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding: 5px 5px 45px 5px;
+}
+
+.Seccion5 .PieFotos2 {
+  color: #edddbb;
+  font-size: 25px;
+  font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding: 40px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
 .PieFotos {
   color: #edddbb;
   font-size: 10px;
@@ -563,5 +580,12 @@ footer .face a:hover {
   .Seccion6 {
     display: flex;
     flex-direction: column;
+  }
+  .Seccion4 .DescripcionBronceado2 {
+    font-size: 18px;
+  }
+  .Seccion5 .PieFotos2 {
+    color: #edddbb;
+    font-size: 15px;
   }
 }

@@ -291,7 +291,23 @@ footer {
     }
 }
 
+.Seccion4 {
+    .DescripcionBronceado2 {
+        color: rgb(209, 241, 231);
 
+        font-size: 30px;
+        font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        padding: 5px 5px 45px 5px;
+    }
+}
+.Seccion5{.PieFotos2{ color: rgb(237, 221, 187);
+
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 40px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;}}
 .PieFotos {
     color: rgb(237, 221, 187);
 
@@ -314,7 +330,8 @@ footer {
 }
 
 .Seccion5 {
-    .VolverI {padding: 20px;
+    .VolverI {
+        padding: 20px;
         margin: 20px;
         text-align: center;
         justify-content: center;
